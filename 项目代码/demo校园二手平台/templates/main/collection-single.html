@@ -1,0 +1,261 @@
+﻿{{define "main/collection-single.html"}}
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+        content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--购物车</title>
+</head>
+
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+    <!-- ===============// header section start here \\================= -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.PNG"width="109px" height="34px"alt="logo">
+                    </a>
+                </div>
+
+                <form action="#" class="header__search">
+                    <input type="text" placeholder="搜索商品">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+                        </svg></button>
+                </form>
+                <div class="header__menu ms-auto">
+                    <ul class="header__nav mb-0">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">首页</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item active" href="/index">首页</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">商品</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/nft"> 发布商品</a></li>
+                                <li><a class="drop-down-item" href="/wallet">钱包</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">调解</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/blog-2">纠纷调解</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                                </svg></a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/help-single">帮助中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <div class="header__action header__action--search">
+                        <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header__action header__action--profile">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-offset="-100,10">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline">用户</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/author"><span class="me-1"><i
+                                                class="icofont-options"></i></span>
+                                        个人主页</a></li>
+                                <li><a class="dropdown-item" href="/signup"><span class="me-1"><i
+                                                class="icofont-space-shuttle"></i></span>
+                                        注册</a></li>
+                                <li><a class="dropdown-item" href="/signin"><span class="me-1"><i
+                                                class="icofont-login"></i></span> 登录</a></li>
+                            </ul>>
+                        </div>
+                    </div>
+                    <div class="wallet-btn">
+                        <a href="/wallet"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+                                class="d-none d-md-inline">钱包</span> </a>
+                    </div>
+                </div>
+
+                <button class="menu-trigger header__btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+
+
+    <!-- ==========Collection banner Section start Here========== -->
+    <section class="collection-banner">
+        <div class="container">
+            <div class="collection-bnr-wrapper">
+                <div class="collection-brn-content text-center">
+                    <h2>我的购物车 </h2>
+                    <a class="col-author" href="/author"><img src="https://api.multiavatar.com/{{.account}}.svg "
+                            alt="Author">
+                        <span>{{.name}}</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========Collection banner Section Ends Here========== -->
+
+
+
+    <!-- ==========Collection Single Section start Here========== -->
+    <section class="collecion-single padding-bottom padding-top">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="header-title">加购商品</h3>
+                <div class="header-content">
+                    <ul class="filter-group d-flex flex-wrap align-items-center">
+                        <li class="li collection-filter">
+                            <!-- <div class="select-wrapper arrow-blue" data-icon="&#xea99;">
+                                <select class="form-select " aria-label="Collection select">
+                                    <option selected>Collections</option>
+                                    <option value="1">Newest</option>
+                                    <option value="2">Trending</option>
+                                    <option value="3">Most Popular</option>
+                                </select>
+                            </div>
+                        </li> -->
+                        <!-- <li class="li day-filter">
+                            <div class="select-wrapper arrow-orange" data-icon="&#xea99;">
+                                <select class="form-select" aria-label="Day select">
+                                    <option selected>Last 7 Days</option>
+                                    <option value="1">Last 15 Day</option>
+                                    <option value="2">Last Month</option>
+                                    <option value="3">All Time</option>
+                                </select>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="collection-single-wrapper">
+                <div class="row g-4" id="showcar">
+{{/*                    总固定框架 row g-4*/}}
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Collection Single Section Ends Here========== -->
+
+
+
+
+
+    <!-- ===============//footer section start here \\================= -->
+    <!-- <footer class="footer-section">
+        <div class="footer-top" style="background-image: url(assets/images/footer/bg.jpg);">
+            <div class="footer-newsletter">
+                <div class="container">
+                    <div class="row g-4 align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="newsletter-part">
+                                <div class="ft-header">
+                                    <h4>Get The Latest Anftiz Updates</h4>
+                                </div>
+                                <form action="#">
+                                    <input type="email" placeholder="Your Mail Address">
+                                    <button type="submit"> Subscrib now</button>
+                                </form>
+                            </div>
+                        </div> -->
+                      
+                     
+        <!-- <div class="footer-bottom">
+            <div class="container">
+                <p class="text-center py-4 mb-0">All rights reserved &copy; Anftiz || Design By: <a
+                        href="http://www.bootstrapmb.com">Labartisan</a>
+                </p>
+            </div>
+        </div>
+    </footer> -->
+    <!-- ===============//footer section end here \\================= -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/message.js"></script>
+    <script type="text/javascript" src="/assets/js/web3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+{{end}}

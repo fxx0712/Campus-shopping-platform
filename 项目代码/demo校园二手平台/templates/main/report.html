@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+        content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>出价</title>
+</head>
+
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- ===============// header section start here \\================= -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.PNG"width="109px" height="34px"alt="logo">
+                    </a>
+                </div>
+
+                <form action="#" class="header__search">
+                    <input type="text" placeholder="搜索商品">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+                        </svg></button>
+                </form>
+                <div class="header__menu ms-auto">
+                    <ul class="header__nav mb-0">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">首页</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item active" href="/index">首页</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">商品</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/nft"> 发布商品</a></li>
+                                <li><a class="drop-down-item" href="/collection-single">购物车</a></li>
+                                <li><a class="drop-down-item" href="/wallet">钱包</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">调解</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/blog-2">纠纷调解</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                                </svg></a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/help-single">帮助中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <div class="header__action header__action--search">
+                        <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header__action header__action--profile">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-offset="-100,10">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline">用户</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/author"><span class="me-1"><i
+                                                class="icofont-options"></i></span>
+                                        个人主页</a></li>
+                                <li><a class="dropdown-item" href="/signup"><span class="me-1"><i
+                                                class="icofont-space-shuttle"></i></span>
+                                        注册</a></li>
+                                <li><a class="dropdown-item" href="/signin"><span class="me-1"><i
+                                                class="icofont-login"></i></span> 登录</a></li>
+                        
+                        </div>
+                    </div>
+                    <div class="wallet-btn">
+                        <a href="/wallet"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+                                class="d-none d-md-inline">钱包</span> </a>
+                    </div>
+                </div>
+
+                <button class="menu-trigger header__btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="page-header-inner">
+                    <div class="page-title">
+                        <h2>举报页面</h2>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="/index">首页</a></li>
+                        <li class="active">举报</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+    <!-- ==========login Section start Here========== -->
+    <div class="login-section padding-top padding-bottom">
+        <div class=" container">
+            <div class="row g-5 align-items-center flex-md-row-reverse">
+                <div class="col-lg-5">
+                    <div class="account-wrapper">
+                        <h3 class="title">举报</h3>
+                        <h8 class="title">商品名：</h3>
+                        <form class="account-form">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput">
+                                <label for="floatingInput">举报内容：</label>
+                            </div>            
+                            <div class="form-group">
+                                <button onclick="openResult()" class="d-block default-btn move-top"><span>立即举报</span></button>
+                            </div>
+                            <div >
+                                <a href="index.html" class="d-block default-btn move-top"><span>返回主页</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- <div class="account-img">
+                        //<img src="assets/images/seller/collector-4.gif" alt="shape-image">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Login Section ends Here========== -->
+
+    <script>
+        function openResult(){    /* 绑定事件 */
+            var r = confirm("确定举报吗？")
+            if (r == true) {
+            window.location.href="index.html"
+            } else {
+                window.location.href="report.html"
+            }
+        } 
+
+    </script>
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>

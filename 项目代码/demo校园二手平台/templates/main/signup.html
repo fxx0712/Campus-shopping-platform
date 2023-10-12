@@ -1,0 +1,197 @@
+﻿{{define "main/signup.html"}}
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+          content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--注册</title>
+</head>
+
+
+<!-- preloader start here -->
+<div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<!-- preloader ending here -->
+<!-- ===============// header section start here \\================= -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.PNG"width="109px" height="34px"alt="logo">
+                </a>
+            </div>
+
+            <button class="menu-trigger header__btn" id="menu05">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- ===============//header section end here \\================= -->
+
+<!-- ==========Page Header Section Start Here========== -->
+<section class="page-header-section style-1">
+    <div class="container">
+        <div class="page-header-content">
+            <div class="page-header-inner">
+                <div class="page-title">
+                    <h2>注册页面 </h2>
+                </div>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active">注册</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==========Page Header Section Ends Here========== -->
+
+
+<!-- ==========login Section start Here========== -->
+<div class="login-section padding-top padding-bottom">
+    <div class=" container">
+        <div class="row g-5 align-items-center flex-md-row-reverse">
+            <div class="col-lg-5">
+                <div class="account-wrapper">
+                    <h3 class="title">----注册----</h3>
+                    <div class="wallet-content">
+                        <div class="wallet-img">
+                            <img src="assets/images/wallet/metamask.svg" alt="Wallet Name">
+                        </div>
+                        <h5>连接MetaMask钱包</h5>
+                        <button class="default-btn small-btn move-right mx-auto" id="enableEthereum">连接</button>
+                        <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">METAMASK官网 （去下载）</a>
+                        <h6>Account:<span id="showAccount"></span></h6>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-wallet-1" role="tabpanel"
+                             aria-labelledby="wallet-tab-1">
+
+                        </div>
+                    </div>
+                    <div class="account-form">
+                        <div class="form-floating mb-3">
+
+
+                            <input type="text" class="form-control" id="userIdInput_name" placeholder="输入六位的名字" maxlength="6">
+                            <label for="userIdInput">用户昵称 6位数内</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="userIdInput_phone" placeholder="输入11位电话号码" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')">
+                            <label for="userIdInput">电话 11位数</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput_email"
+                                   placeholder="name@example.com">
+                            <label for="floatingInput">邮箱</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword_password" name="password"
+                                   placeholder="Password" minlength="6" maxlength="9">
+                            <label for="floatingPassword">密码 6~9位数</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="confirmPass" name="repassword"
+                                   placeholder="Confirm Password" onkeyup="checkpassword()">
+                            <label for="confirmPass">确认密码</label>
+                        </div>
+
+                        <span id="tishi"></span></input>
+
+                        <div class="form-group">
+                            <button a class="d-block default-btn move-top" id="btn_sin"><span>立即注册</span></button>
+                        </div>
+
+
+                    </div>
+                    <div class="account-bottom">
+                        <span class="d-block cate pt-10">已经有了一个账户? <a href="/signin"> 去登录</a></span>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="account-img">
+                    <img src="assets/images/account/01.png" alt="shape-image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+<!-- ==========Login Section ends Here========== -->
+
+
+<!-- scrollToTop start here -->
+<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+<!-- scrollToTop ending here -->
+
+
+
+
+<!-- All Scripts -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/countdown.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/functions.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/web3.min.js"></script>
+<script src="assets/js/message.js"></script>
+<script type="module" src="assets/js/app.js"></script>
+
+
+<script type="text/javascript">
+    function checkpassword() {
+        var password = document.getElementById("floatingPassword_password").value;
+        var repassword = document.getElementById("confirmPass").value;
+
+        if(password == repassword) {
+            document.getElementById("tishi").innerHTML="<br><font color='green'>两次密码输入一致</font>";
+            document.getElementById("submit").disabled = false;
+
+        }else {
+            document.getElementById("tishi").innerHTML="<br><font color='red'>两次输入密码不一致!</font>";
+            document.getElementById("submit").disabled = true;
+        }
+    }
+</script>
+{{end}}

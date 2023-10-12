@@ -1,0 +1,663 @@
+﻿{{define "main/author.html"}}
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+        content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--个人主页</title>
+</head>
+
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- ===============// header section start here \\================= -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.PNG" width="109px" height="34px" alt="logo">
+                    </a>
+                </div>
+
+                <form action="#" class="header__search">
+                    <input type="text" placeholder="搜索商品">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+                        </svg></button>
+                </form>
+                <div class="header__menu ms-auto">
+                    <ul class="header__nav mb-0">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">首页</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item active" href="index.html">首页</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">商品</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/nft"> 发布商品</a></li>
+                                <li><a class="drop-down-item" href="/single">购物车</a></li>
+                                <li><a class="drop-down-item" href="/wallet">钱包</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">调解</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="blog-2">纠纷调解</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                                </svg></a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/help-single">帮助中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <div class="header__action header__action--search">
+                        <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header__action header__action--profile">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-offset="-100,10">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline">用户</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/author"><span class="me-1"><i
+                                                class="icofont-options"></i></span>
+                                        个人主页</a></li>
+                                <li><a class="dropdown-item" href="/signup"><span class="me-1"><i
+                                                class="icofont-space-shuttle"></i></span>
+                                        注册</a></li>
+                                <li><a class="dropdown-item" href="/signin"><span class="me-1"><i
+                                                class="icofont-login"></i></span> 登录</a></li>
+                            </ul>>
+
+                        </div>
+                    </div>
+                    <div class="wallet-btn">
+                        <a href="/wallet"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+                                class="d-none d-md-inline">钱包</span> </a>
+                    </div>
+                </div>
+
+                <button class="menu-trigger header__btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="page-header-inner">
+                    <div class="page-title">
+                        <h2>个人主页</h2>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="/index">首页</a></li>
+                        <li class="active">{{.name}}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+
+
+    <!-- ==========Profile Section Start Here========== -->
+    <section class="profile-section padding-top padding-bottom">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="member-profile">
+                    <div class="profile-item">
+                        <div class="profile-cover">
+                            <img src="assets/images/profile/cover.jpg" alt="cover-pic">
+
+                        </div>
+                        <div class="profile-information">
+                            <div class="profile-pic">
+                                <img src="https://api.multiavatar.com/{{.account}}.png" alt="DP">
+
+                            </div>
+                            <div class="profile-name">
+                                <h4>{{.name}}</h4>
+                            </div>
+                            <ul class="profile-contact">
+                                <li class="crypto-copy">
+                                    <div id="cryptoCode" class="crypto-page">
+                                        <input id="cryptoLink" value="{{.account}}" readonly>
+                                        <div id="cryptoCopy" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Copy Address">
+                                            <span class="copy-icon">
+                                                <i class="icofont-ui-copy" aria-hidden="true"
+                                                    data-copytarget="#cryptoLink"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+                        <nav class="profile-nav">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-allNft-tab" data-bs-toggle="tab"
+                                    data-bs-target="#allNft" type="button" role="tab" aria-controls="allNft"
+                                    aria-selected="true" onclick="visibilityOne()">关于商品</button>
+                                <button class="nav-link" id="nav-about-tab_two" data-bs-toggle="tab"
+                                    data-bs-target="#about" type="button" role="tab" aria-controls="about"
+                                    aria-selected="false" onclick="visibilityTwo()">关于我</button>
+                                <script language="javascript" type="text/javascript">
+                                    function visibilityOne() {
+                                        var ui = document.getElementById("nav-tabContent_two");
+                                        ui.style.display = "none";
+                                        var one = document.getElementById("nav-tabContent");
+                                        one.style.display = "block";
+                                    }
+
+                                    function visibilityTwo() {
+                                        var ui = document.getElementById("nav-tabContent");
+                                        ui.style.display = "none";
+                                        var two = document.getElementById("nav-tabContent_two");
+                                        two.style.display = "block";
+                                    }
+                                </script>
+                            </div>
+                        </nav>
+                        <!-- 关于商品 Tab -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane activity-page fade show active" id="allNft" role="tabpanel">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-xl-9">
+                                            <article>
+                                                <div class="activity-tab">
+                                                    <ul class="nav nav-pills mb-30 px-2" id="pills-tab" role="tablist">
+
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="pills-mentions-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-mentions"
+                                                                type="button" role="tab" aria-controls="pills-mentions"
+                                                                aria-selected="false"><i class="icofont-flash" onclick="One()"></i>
+                                                                在售商品</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-favorites-tab"
+                                                                data-bs-toggle="pill" data-target="#pills-favorites"
+                                                                type="button" role="tab" aria-controls="pills-favorites"
+                                                                aria-selected="false" onclick="Two()"><i class="icofont-license"></i>
+                                                                下架</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-groups-tab"
+                                                                data-bs-toggle="pill" data-target="#pills-groups"
+                                                                type="button" role="tab" aria-controls="pills-groups"
+                                                                aria-selected="true" onclick="Three()"><i class="icofont-puzzle"></i>
+                                                                已买到</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-bbqs-tab"
+                                                                    data-bs-toggle="pill" data-target="#pills-favorites"
+                                                                    type="button" role="tab" aria-controls="pills-favorites"
+                                                                    aria-selected="false" onclick="Fore()"><i class="icofont-license"></i>
+                                                                已卖出</button>
+                                                        </li>
+                                                        <!-- 将上面的已卖出和已买到data-bs-target改为了data-target -->
+                                                    </ul>
+                                                    <div class="tab-content activity-content" id="pills-tabContent" >
+                                                        <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                            id="pills-mentions" role="tabpanel"
+                                                            aria-labelledby="pills-mentions-tab">
+                                                            <div class="col-lg-4 col-sm-6">
+                                                                <div class="nft-item" >
+                                                                    <div class="nft-inner">
+                                                                        <!-- nft top part -->
+                                                                        <!-- nft-bottom part -->
+                                                                        <div class="nft-item-bottom">
+
+                                                                            <div class="nft-content">
+
+
+                                                                                <div
+                                                                                        class="price-like d-flex justify-content-between align-items-center">
+                                                                                    <div
+                                                                                            class="nft-price d-flex align-items-center">
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                        id="pills-favorites" role="tabpanel"
+                                                        aria-labelledby="pills-favorites-tab" style="display: none;">
+
+                                                        <div class="row justify-content-center g-4">
+                                                            <div class="col-lg-4 col-sm-6">
+                                                                <div class="nft-item" >
+                                                                    <div class="nft-inner">
+                                                                        <!-- nft top part -->
+                                                                        <!-- nft-bottom part -->
+                                                                        <div class="nft-item-bottom">
+
+                                                                            <div class="nft-content">
+
+
+                                                                                <div
+                                                                                    class="price-like d-flex justify-content-between align-items-center">
+                                                                                    <div
+                                                                                        class="nft-price d-flex align-items-center">
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                        id="pills-groups" role="tabpanel"
+                                                        aria-labelledby="pills-groups-tab" style="display: none;">
+
+                                                        <div class="row justify-content-center g-4">
+                                                            <div class="col-lg-4 col-sm-6">
+                                                                <div class="nft-item">
+                                                                    <div class="nft-inner">
+                                                                        <!-- nft top part -->
+                                                                        <!-- nft-bottom part -->
+                                                                        <div class="nft-item-bottom">
+
+                                                                            <div class="nft-content">
+                                                                                <div class="content-title">
+
+                                                                                </div>
+
+                                                                                <div
+                                                                                    class="nft-status d-flex flex-wrap justify-content-between align-items-center ">
+
+                                                                                </div>
+                                                                                <div
+                                                                                    class="price-like d-flex justify-content-between align-items-center">
+                                                                                    <div
+                                                                                        class="nft-price d-flex align-items-center">
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Aside Part -->
+
+                                                </div>
+                                                <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                     id="pills-bbqs" role="tabpanel"
+                                                     aria-labelledby="pills-bbqs-tab" style="display: none;">
+
+                                                    <div class="row justify-content-center g-4">
+                                                        <div class="col-lg-4 col-sm-6">
+                                                            <div class="nft-item" >
+                                                                <div class="nft-inner">
+                                                                    <!-- nft top part -->
+                                                                    <!-- nft-bottom part -->
+                                                                    <div class="nft-item-bottom">
+
+                                                                        <div class="nft-content">
+
+
+                                                                            <div
+                                                                                    class="price-like d-flex justify-content-between align-items-center">
+                                                                                <div
+                                                                                        class="nft-price d-flex align-items-center">
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </article>
+                                        </div>
+                                    </div>
+                                    <script language="javascript" type="text/javascript">
+                                        function One() {
+                                            var ui = document.getElementById("pills-tabContent");
+                                            ui.style.display = "block";
+                                            var one = document.getElementById("pills-favorites");
+                                            one.style.display = "none";
+                                            var ui = document.getElementById("pills-groups");
+                                            ui.style.display = "none";
+                                            var ui = document.getElementById("pills-bbqs");
+                                            ui.style.display = "none";
+                                        }
+    
+                                        function Two() {
+                                            var ui = document.getElementById("pills-tabContent");
+                                            ui.style.display = "none";
+                                            var one = document.getElementById("pills-favorites");
+                                            one.style.display = "block";
+                                            var ui = document.getElementById("pills-groups");
+                                            ui.style.display = "none";
+                                            var ui = document.getElementById("pills-bbqs");
+                                            ui.style.display = "none";
+                                        }
+                                        function Three() {
+                                            var ui = document.getElementById("pills-tabContent");
+                                            ui.style.display = "none";
+                                            var one = document.getElementById("pills-favorites");
+                                            one.style.display = "none";
+                                            var ui = document.getElementById("pills-groups");
+                                            ui.style.display = "block";
+                                            var ui = document.getElementById("pills-bbqs");
+                                            ui.style.display = "none";
+                                        }
+                                        function Fore() {
+                                            var ui = document.getElementById("pills-tabContent");
+                                            ui.style.display = "none";
+                                            var one = document.getElementById("pills-favorites");
+                                            one.style.display = "none";
+                                            var ui = document.getElementById("pills-groups");
+                                            ui.style.display = "none";
+                                            var ui = document.getElementById("pills-bbqs");
+                                            ui.style.display = "block";
+                                        }
+                                    </script>
+
+
+                                    <!-- Aside Part -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 关于我 Tab -->
+                        <div class="tab-content" id="nav-tabContent_two" style="display: none;">
+                            <div class="tab-pane activity-page fade show active" id="allNft" role="tabpanel">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-xl-9">
+                                            <article>
+                                                <div class="activity-tab">
+                                                    <ul class="nav nav-pills mb-30 px-2" id="pills-tab" role="tablist">
+
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="pills-mentions-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-mentions"
+                                                                type="button" role="tab" aria-controls="pills-mentions"
+                                                                aria-selected="false" onclick="statusOne()"><i class="icofont-flash"></i>
+                                                                降价提醒</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-favorites-tab"
+                                                                data-bs-toggle="pill" data-target="#pills-favorites"
+                                                                type="button" role="tab" aria-controls="pills-favorites"
+                                                                aria-selected="false" onclick="statusTwo()"><i class="icofont-license" ></i>
+                                                                纠纷详情</button>
+                                                        </li>
+                                                        <!-- 将上面的已卖出和已买到data-bs-target改为了data-target -->
+                                                    </ul>
+                                                    <div class="tab-content activity-content" id="tabContentes" >
+                                                        <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                            id="pills-mentions" role="tabpanel"
+                                                            aria-labelledby="pills-mentions-tab">
+                                                            <div class="row justify-content-center g-4">
+                                                                <div class="col-lg-4 col-sm-6">
+                                                                    <div class="nft-item">
+                                                                        <div class="nft-inner">
+                                                                            <!-- nft top part -->
+                                                                            <div class="nft-item-bottom">
+                                                                                <div class="nft-thumb">
+                                                                                    <img src="assets/images/nft-item/04.gif"
+                                                                                        alt="nft-img">
+                                                                                    <!-- nft countdwon -->
+                                                                                </div>
+                                                                                <div class="nft-content">
+                                                                                    <div class="content-title">
+                                                                                        <h5><a>项链</a> </h5>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="nft-status d-flex flex-wrap justify-content-between align-items-center ">
+                                                                                        <div class="nft-stock">原价：6元
+                                                                                        </div>
+                                                                                        <h />
+                                                                        
+                                                                                        <h />
+                                                                                        <h6>------------------------------------------------
+                                                                                        </h6>
+
+                                                                                        <div class="nft-stock">
+                                                                                            商品简介：编不下去了，自己变
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-content activity-content" id="tabContentss" style="display: none;" >
+                                                        <div class="tab-pane fade mentions-section show active onsale-loadmore"
+                                                            id="pills-mentions" role="tabpanel"
+                                                            aria-labelledby="pills-mentions-tab">
+                                                            <div class="row justify-content-center g-4">
+                                                                <div class="col-lg-4 col-sm-6">
+                                                                    <div class="nft-item">
+                                                                        <div class="nft-inner">
+                                                                            <!-- nft top part -->
+                                                                            <div class="nft-item-bottom">
+                                                                                <div class="nft-thumb">
+                                                                                    <img src="assets/images/nft-item/04.jpg"
+                                                                                        alt="nft-img">
+                                                                                    <!-- nft countdwon -->
+                                                                                </div>
+                                                                                <div class="nft-content">
+                                                                                    <div class="content-title">
+                                                                                        <h5><a>甜甜圈</a> </h5>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="nft-status d-flex flex-wrap justify-content-between align-items-center ">
+                                                                                        <div class="nft-stock">出售价格：6元
+                                                                                        </div>
+                                                                                        <h />
+                                                                                        <div class="nft-stock">买入价格：10元
+                                                                                        </div>
+                                                                                        <h />
+                                                                                        <h6>------------------------------------------------
+                                                                                        </h6>
+
+                                                                                        <div class="nft-stock">
+                                                                                            纠纷详情：我以为以为面包上有你的唇香，结果什么都没有~日尼玛，退钱
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script language="javascript" type="text/javascript">
+                                                        function statusOne() {
+                                                            console.log(111)
+                                                            var uis = document.getElementById("tabContentes");
+                                                            uis.style.display = "block";
+                                                            var one = document.getElementById("tabContentss");
+                                                            one.style.display = "none";
+                                                        }
+                    
+                                                        function statusTwo() {
+                                                            var uis = document.getElementById("tabContentes");
+                                                            console.log(222)
+                                                            uis.style.display = "none";
+                                                            var one = document.getElementById("tabContentss");
+                                                            one.style.display = "block";
+                                                        }
+                                                    </script>
+                                                    <!-- about tab -->
+                                                    <div class="tab-pane fade" id="about" role="tabpanel"
+                                                        aria-labelledby="nav-about-tab">
+                                                        <div>
+                                                            <div class="row">
+                                                                <div class="col-xl-9">
+                                                                    <article>
+                                                                        <div class="info-card mb-3">
+                                                                            <div class="info-card-title">
+                                                                                <h4>个人简介</h4>
+                                                                            </div>
+                                                                            <div class="info-card-content">
+                                                                                <p>喜欢出售一些美食，拒绝无理由退货，商品默认有瑕疵，完美主义者勿扰</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                                                </div>
+
+                                                                <!-- Aside Part -->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Aside Part -->
+
+                                                </div>
+                                                </article>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Aside Part -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- following Tab -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ==========Profile Section Ends Here========== -->
+
+
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/web3.min.js"></script>
+    <script src="assets/js/message.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+    <script>
+        window.onload = function () {
+            let loc= location.href;
+            let n1 = loc.length;
+            let n2 = loc.indexOf("?");
+            let parameter = decodeURI(loc.substr(n2+1, n1-n2));
+            let arr = parameter.split("=");
+            myContract.methods.findUser(arr[1]).call().then(function (result) {
+                console.log("result=> ", result);
+                $("#cryptoLink").val(result[0])
+            })
+        }
+    </script>
+{{end}}

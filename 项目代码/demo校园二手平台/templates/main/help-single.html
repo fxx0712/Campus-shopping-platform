@@ -1,0 +1,321 @@
+﻿{{define "main/help-single.html"}}
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+        content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--帮助中心</title>
+</head>
+
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+     <!-- ===============// header section start here \\================= -->
+     <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.PNG"width="109px" height="34px"alt="logo">
+                    </a>
+                </div>
+
+                <form action="#" class="header__search">
+                    <input type="text" placeholder="搜索商品">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+                        </svg></button>
+                </form>
+                <div class="header__menu ms-auto">
+                    <ul class="header__nav mb-0">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">首页</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item active" href="/index">首页</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">商品</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/nft"> 发布商品</a></li>
+                                <li><a class="drop-down-item" href="/collection-single">购物车</a></li>
+                                <li><a class="drop-down-item" href="/wallet">钱包</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">调解</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/blog-2">纠纷调解</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                                </svg></a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/help-single">帮助中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <div class="header__action header__action--search">
+                        <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header__action header__action--profile">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-offset="-100,10">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline">用户</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/author"><span class="me-1"><i
+                                                class="icofont-options"></i></span>
+                                        个人主页</a></li>
+                                <li><a class="dropdown-item" href="/signup"><span class="me-1"><i
+                                                class="icofont-space-shuttle"></i></span>
+                                        注册</a></li>
+                                <li><a class="dropdown-item" href="/signin"><span class="me-1"><i
+                                                class="icofont-login"></i></span> 登录</a></li>
+                            </ul>>
+                        </div>
+                    </div>
+                    <div class="wallet-btn">
+                        <a href="/wallet"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+                                class="d-none d-md-inline">钱包</span> </a>
+                    </div>
+                </div>
+
+                <button class="menu-trigger header__btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+
+
+    <!-- ===============//Help Search section start here \\================= -->
+    <section class="help-search padding-top pb-5">
+        <div class="container">
+            <div class="help-search-wrapper text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="help-search-content mb-4">
+                            <h2>帮助中心</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============//Help Search section end here \\================= -->
+
+
+
+    <!-- ===============>> help-text section start here <<================= -->
+    <div class="help-text padding-top padding-bottom">
+        <div class=" container">
+            <div class="row g-5 flex-lg-row-reverse">
+                <div class="col-lg-9">
+                    <div class="help-text-wrapper">
+                        <h3 class="mb-4">关于我们的校园二手交易平台</h3>
+                        <p>运行于校园内部的二手交易平台，便于学生进行出售/收购二手商品。在保护学生隐私为基本的情况下，进行二手交易。
+                        </p>
+                        <p>去中心化的机制可以使学生与学生直接进行交易，没有中间方，无需支付额外的交易费用，使学生都可以更快捷的找到自己想要的商品，以及出售商品。
+                        </p>
+                        <br>
+                        <h3 class="mb-4">功能介绍</h3>
+                        <h5>登录注册</h5>
+                        <p>基于学号来注册个人身份，注册时选择个人账户，学生本人身份受到加密保护，具有唯一性和真实性，买卖物品不用拘束。
+                        </p>
+                        <h5>荷兰拍卖</h5>
+                        <p>买家对价格不满意仅有一次对卖家出价的机会，卖家同意则进行新价格交易，卖家确认后买家不可撤回出价。反之则出价无效，只能按照原定价格进行交易。
+                        </p>
+                        <h5>买卖交易</h5>
+                        <p>发布商品后会显示发布时间，商品被购买后，交易下架时间也会记录在链。购买交易也会记录。
+                        </p>
+                        <h5>举报机制</h5>
+                        <p>由所有用户当监督员，商品无法确认正规性时移交大众评审，举报成功下架商品并扣除一定代币给举报者，反之则因虚假举报扣除代币补偿卖家。
+                        </p>
+                        <h5>纠纷调解</h5>
+                        <p>设立第三方机构，当产生交易纠纷时，由平台随机众人公投，卖家买家匿名发声，公布在投票页面，投票结果来判定纠纷胜利端。
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <aside class="related-help">
+                        <h5>平台特点</h5>
+                        <ul class="related-linklist">
+                            <li><a>基于区块链</a></li>
+                            <li><a>身份隐私保护</a></li>
+                            <li><a>无第三方机构参与买卖</a></li>
+                            <li><a>使用METAMASk钱包进行交易</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ===============>> help-text section end here <<================= -->
+
+
+    <!-- ===============//nft-sell section start here \\================= -->
+    <section class="process-section padding-top padding-bottom">
+        <div class="container">
+            <div class="section-header justify-content-center">
+                <div class="header-title">
+                    <h3>开始创建并买卖商品</h3>
+                </div>
+            </div>
+            <div class="section-wrapper">
+                <div class="nft-sell-wrapper">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-md-6">
+                            <div class="nft-item style-3">
+                                <div class="nft-inner text-center">
+                                    <div class="nft-thumb">
+                                        <img src="assets/images/nft-item/style-3/01.png" alt="nft-img">
+                                    </div>
+                                    <div class="nft-content">
+                                        <div class="author-details">
+                                            <h5>设置你的钱包</h5> 
+                                            <p>设置好您的钱包后，单击右上角的钱包图标将其连接到平台
+                                            <a class="drop-down-item" href="/wallet">或点击此处跳转</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nft-item style-3">
+                                <div class="nft-inner text-center">
+                                    <div class="nft-thumb">
+                                        <img src="assets/images/nft-item/style-3/04.png" alt="nft-img">
+                                    </div>
+                                    <div class="nft-content">
+                                        <div class="author-details">
+                                            <h5>查看平台纠纷</h5>
+                                            <p>买卖家因各种原因产生纠纷后，进行大众评审解决纠纷事件
+                                                <a class="drop-down-item" href="/blog-single-2">点击此处跳转</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nft-item style-3">
+                                <div class="nft-inner text-center">
+                                    <div class="nft-thumb">
+                                        <img src="assets/images/nft-item/style-3/02.png" alt="nft-img">
+                                    </div>
+                                    <div class="nft-content">
+                                        <h5>创建您的收藏</h5>
+                                        <p>单击您心仪的商品并加入您的购物车。</p>
+                                        <a class="drop-down-item" href="/single">点击此处跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nft-item style-3">
+                                <div class="nft-inner text-center">
+                                    <div class="nft-thumb">
+                                        <img src="assets/images/nft-item/style-3/03.png" alt="nft-img">
+                                    </div>
+                                    <div class="nft-content">
+                                        <div class="author-details">
+                                            <h5>添加您的出售商品</h5>
+                                            <p>上传您的商品，添加名字和描述，及使用详情</p>
+                                            <a class="drop-down-item" href="/nft">点击此处跳转</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============//nft-sell section end here \\================= -->
+
+
+
+ 
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+{{end}}

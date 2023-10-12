@@ -1,0 +1,376 @@
+﻿{{define "main/blog-2.html"}}
+
+
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+        content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--纠纷调解</title>
+</head>
+
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- ===============// header section start here \\================= -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.PNG"width="109px" height="34px"alt="logo">
+                    </a>
+                </div>
+
+                <form action="#" class="header__search">
+                    <input type="text" placeholder="搜索商品">
+                    <button type="button"><i class="icofont-search-2"></i></button>
+                    <button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+                        </svg></button>
+                </form>
+                <div class="header__menu ms-auto">
+                    <ul class="header__nav mb-0">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">首页</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item active" href="/index">首页</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">商品</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/nft"> 发布商品</a></li>
+                                <li><a class="drop-down-item" href="/collection-single">购物车</a></li>
+                                <li><a class="drop-down-item" href="/wallet">钱包</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">调解</a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/blog-2">纠纷调解</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                                </svg></a>
+
+                            <ul class="dropdown-menu header__nav-menu">
+                                <li><a class="drop-down-item" href="/help-single">帮助中心</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__actions">
+                    <div class="header__action header__action--search">
+                        <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                    </div>
+
+                    <div class="header__action header__action--profile">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-offset="-100,10">
+                                <span><i class="icofont-user"></i></span> <span class="d-none d-md-inline">用户</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/author"><span class="me-1"><i
+                                                class="icofont-options"></i></span>
+                                        个人主页</a></li>
+                                <li><a class="dropdown-item" href="/signup"><span class="me-1"><i
+                                                class="icofont-space-shuttle"></i></span>
+                                        注册</a></li>
+                                <li><a class="dropdown-item" href="/signin"><span class="me-1"><i
+                                                class="icofont-login"></i></span> 登录</a></li>
+                        
+                        </div>
+                    </div>
+                    <div class="wallet-btn">
+                        <a href="/wallet"><span><i class="icofont-wallet" data-blast="color"></i></span> <span
+                                class="d-none d-md-inline">钱包</span> </a>
+                    </div>
+                </div>
+
+                <button class="menu-trigger header__btn" id="menu05">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ===============//header section end here \\================= -->
+
+
+
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="page-header-inner">
+                    <div class="page-title">
+                        <h2>纠纷调解页面 </h2>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="/index">首页</a></li>
+                        <li class="active">纠纷调解</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+
+
+    <!-- ==========Blog Section start Here========== -->
+    <section class="blog-section padding-top padding-bottom">
+        <div class="container">
+            <div class="main-blog">
+                <div class="row g-5">
+                    <div class="col-xl-8 col-12">
+                        <div class="blog-wrapper">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-sm-6">
+                                    <div class="nft-item blog-item">
+                                        <div class="nft-inner">
+                                            <div class="nft-thumb">
+                                                <img src="assets/images/nft-item/blog/01.jpg" alt="blog-img">
+                                            </div>
+                                            <div class="nft-content">
+                                                <div class="author-details">
+                                                    <h4>ipadpro 电池损耗不符</h4>
+                                                    <div class="meta-info">
+                                                        <p><span><i class="icofont-ui-calendar"
+                                                                    data-blast="color"></i></span>2022/3/10
+                                                        </p>
+                                                        <p><span><i class="icofont-user"
+                                                                    data-blast="color"></i></span>天天想睡觉
+                                                        </p>
+                                                    </div>
+                                                    <a href="blog-single-2.html"
+                                                        class="default-btn move-right small-btn"><span>查看详情</span> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+                                <div class="col-sm-6">
+                                    <div class="nft-item blog-item">
+                                        <div class="nft-inner">
+                                            <div class="nft-thumb">
+                                                <img src="assets/images/nft-item/blog/07.jpg" alt="blog-img">
+                                            </div>
+                                            <div class="nft-content">
+                                                <div class="author-details">
+                                                    <h4>实物与图片不符 </h4>
+                                                    <div class="meta-info">
+                                                        <p><span><i class="icofont-ui-calendar"
+                                                                    data-blast="color"></i></span>2022/3/15
+                                                        </p>
+                                                        <p><span><i class="icofont-user"
+                                                                    data-blast="color"></i></span>快乐土豆泥
+                                                        </p>
+                                                    </div>
+                                                    <a href="/blog-single-2"
+                                                        class="default-btn move-right small-btn"><span>查看详情</span> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="nft-item blog-item">
+                                        <div class="nft-inner">
+                                            <div class="nft-thumb">
+                                                <img src="assets/images/nft-item/blog/02.jpg" alt="blog-img">
+                                            </div>
+                                            <div class="nft-content">
+                                                <div class="author-details">
+                                                    <h4>手办有明显破损 </h4>
+                                                    <div class="meta-info">
+                                                        <p><span><i class="icofont-ui-calendar"
+                                                                    data-blast="color"></i></span>2022/2/20
+                                                        </p>
+                                                        <p><span><i class="icofont-user"
+                                                                    data-blast="color"></i></span>草莓朱古力
+                                                        </p>
+                                                    </div>
+                                                    <a href="/blog-single-2"
+                                                        class="default-btn move-right small-btn"><span>查看详情</span> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-sm-6">
+                                    <div class="nft-item blog-item">
+                                        <div class="nft-inner">
+                                            <div class="nft-thumb">
+                                                <img src="assets/images/nft-item/blog/04.jpg" alt="blog-img">
+                                            </div>
+                                            <div class="nft-content">
+                                                <div class="author-details">
+                                                    <h4>实物与图片不符</h4>
+                                                    <div class="meta-info">
+                                                        <p><span><i class="icofont-ui-calendar"
+                                                                    data-blast="color"></i></span>2022/1/27
+                                                        </p>
+                                                        <p><span><i class="icofont-user"
+                                                                    data-blast="color"></i></span>悲伤水蜜桃
+                                                        </p>
+                                                    </div>
+                                                    <a href="/blog-single-2"
+                                                        class="default-btn move-right small-btn"><span>查看详情</span> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                            </div>
+                        </div>
+                        <!-- <div class="paginations">
+                            <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
+                                <li>
+                                    <a href="#"><i class="icofont-rounded-double-left"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="d-none d-sm-block">
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">...</a>
+                                </li>
+                                <li class="d-none d-sm-block">
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-rounded-double-right"></i></a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-xl-4 col-12">
+                        <aside>
+                            <div class="profile-widget search-widget">
+                                <div class="widget-inner">
+                                    <div class="widget-title">
+                                        <h5>纠纷问题</h5>
+                                    </div>
+                                    <div class="widget-content">
+                                        <p>买卖方因各种问题产生纠纷，二者即可发表观点后
+                                            上报大众评审进行评判</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+            
+
+                            <div class="widget widget-category">
+                                <div class="widget-header">
+                                    <h5 class="title">可能产生纠纷的缘由</h5>
+                                </div>
+                                <ul class="widget-wrapper">
+                                    <li>
+                                        <span><i class="icofont-double-right"></i>实物与图片不符</span>
+                                      </li>
+                                      <li>
+                                        <span><i class="icofont-double-right"></i>商品磨损过多</span>
+                                      </li>
+                                      <li>
+                                        <span><i class="icofont-double-right"></i>具体情况未标明</span>
+                                      </li>
+                                      <li>
+                                        <span><i class="icofont-double-right"></i>盗版产品</span>
+                                      </li>
+                                      <li>
+                                        <span><i class="icofont-double-right"></i>......</span>
+                                      </li>
+                                </ul>
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Blog Section ends Here========== -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>
+{{end}}

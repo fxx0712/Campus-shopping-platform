@@ -1,0 +1,157 @@
+﻿{{define "main/signin.html"}}
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Labartisan">
+    <meta name="description"
+          content="Anftiz is a full-fledged NFT or Digital assets marketplace HTML template. It is suitable for selling NFTs, or non-fungible tokens, Digital Arts, Digital Music & All types of Digital Assets. You can create, sell & collect NFT’s or digital assets through this website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags for Social Media(Better SEO) -->
+    <!-- <meta property="og:title" content=""> -->
+    <!-- <meta property="og:type" content=""> -->
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- site favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- ====== All css file ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css//icofont.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- site title -->
+    <title>校园二手交易平台--登录</title>
+</head>
+
+<body>
+<!-- preloader start here -->
+<div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<!-- preloader ending here -->
+<!-- ===============// header section start here \\================= -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.PNG" width="109px" height="34px" alt="logo">
+                </a>
+            </div>
+            <div class="header__actions">
+                <div class="header__action header__action--search">
+                    <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                </div>
+            </div>
+
+            <button class="menu-trigger header__btn" id="menu05">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- ===============//header section end here \\================= -->
+
+
+<!-- ==========Page Header Section Start Here========== -->
+<section class="page-header-section style-1">
+    <div class="container">
+        <div class="page-header-content">
+            <div class="page-header-inner">
+                <div class="page-title">
+                    <h2>登录页面 </h2>
+                </div>
+                <ol class="breadcrumb">
+                    <li><a href="index">首页</a></li>
+                    <li class="active">登录</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==========Page Header Section Ends Here========== -->
+
+
+<!-- ==========login Section start Here========== -->
+<div class="login-section padding-top padding-bottom">
+    <div class=" container">
+        <div class="row g-5 align-items-center flex-md-row-reverse">
+            <div class="col-lg-5">
+                <div class="account-wrapper">
+                    <h3 class="title">----登录----</h3>
+                    <div class="account-form">
+                        <div class="tab-pane fade show active" id="pills-wallet-1" role="tabpanel"
+                             aria-labelledby="wallet-tab-1">
+                            <div class="wallet-content">
+                                <div class="wallet-img">
+                                    <img src="assets/images/wallet/metamask.svg" alt="Wallet Name">
+                                </div>
+                                <div class="wallet-desc">
+                                    <h5>连接Metamask账户</h5>
+                                    <button class="default-btn small-btn move-right" id="enableEthereum">连接</button>
+                                    <h6>Account:<span id="showAccount"></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword_pas"
+                                   placeholder="Password" minlength="6" maxlength="9">
+                            <label for="floatingPassword">用户密码</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="d-block default-btn move-top" id="btn_login"><span>立即登录</span></button>
+                        </div>
+                    </div>
+                    <div class="account-bottom">
+                        <span class="d-block cate pt-10">没有任何账户? <a href="/signup"> 去注册</a></span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-7">
+                <div class="account-img">
+                    <img src="assets/images/account/sign-in.png" alt="shape-image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==========Login Section ends Here========== -->
+
+
+<!-- scrollToTop start here -->
+<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i></a>
+<!-- scrollToTop ending here -->
+
+
+<!-- All Scripts -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/countdown.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/functions.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/web3.min.js"></script>
+<script src="/assets/js/message.js"></script>
+<script type="text/javascript" src="/assets/js/app.js"></script>
+{{end}}
